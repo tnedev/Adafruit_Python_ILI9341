@@ -138,7 +138,6 @@ class ILI9341(object):
         # Set SPI to mode 0, MSB first.
         spi.set_mode(0)
         spi.set_bit_order(SPI.MSBFIRST)
-        spi.set_clock_hz(64000000)
         # Create an image buffer.
         self.buffer = Image.new('RGB', (width, height))
 
